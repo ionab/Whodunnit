@@ -73,7 +73,7 @@ console.log(detectiveInfo());
 
 
 // Episode 6
-// The murderer is Jerry
+// The murderer is Rick see explaination below
 
 var murderer = 'Rick';
 
@@ -82,10 +82,13 @@ var outerFunction = function() {
 
   var innerFunction = function() {
     murderer = 'Jerry';
+    // console.log(murderer); => returns Jerry
   }
 
   innerFunction();
 }
 
 outerFunction();
+// Here the function is being called and if we were to output or return from within the function the murder would be Jerry.
+
 console.log('the murderer is ', murderer);
