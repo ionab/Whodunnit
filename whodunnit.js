@@ -22,7 +22,7 @@ var result = function() {
 console.log(result());
 
 // Episode 3
-// will print out a list of index positions with their respective positions
+// will print out a list of index positions with their respective positions will include the ducks dogs and lions array
 
 var myAnimals = ['Chickens', 'Cats', 'Rabbits'];
 
@@ -89,6 +89,29 @@ var outerFunction = function() {
 }
 
 outerFunction();
+
 // Here the function is being called and if we were to output or return from within the function the murder would be Jerry.
 
 console.log('the murderer is ', murderer);
+
+
+//Episode 7
+
+var mannorhouse = {
+  hall: "candlestick",
+  diningRoom: "knife",
+  kitchen: "rope",
+  conservatory: "revolver",
+  library: "poison"
+}
+
+var discoverMurderWeapon = function(victimLoction){
+  for (var i in mannorhouse){
+      if (i === victimLoction){
+        console.log("The murder weapon was " + mannorhouse[i]);
+      }
+  }
+}
+
+discoverMurderWeapon("hall");
+discoverMurderWeapon("diningRoom");
